@@ -1,0 +1,150 @@
+body {
+    font-size: 16px;
+}
+nav {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    background-color: white;
+    justify-items: stretch;
+    align-content: space-between;
+    column-gap: 0px;
+    grid-template-areas: "logo links spacer navPOI button";
+    font-size: 16px;
+    
+}
+.navLink:hover {
+    border: 1px solid #000;
+}
+.poiLink:hover {
+    border: 1px solid #000;
+}
+
+.logo {
+    
+    grid-area: logo;
+    width: 100px;
+  }
+  .links {
+    grid-area: links;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+  .spacer{
+    grid-area: spacer;
+    align-self: center;
+  }
+  .links * {
+    padding: 5px;
+  }
+  .navPOI {
+    grid-area: navPOI;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+  }
+  .navBut {
+    align-self: center;
+    grid-area: button ;
+    margin-left: 5px;
+    
+  }
+  .but {
+    color: white; 
+    font-size: 14px; 
+    line-height: 14px; 
+    padding: 2px; 
+    border-radius: 8px; 
+    background-color: black;
+    box-shadow: rgb(0, 0, 0) 1px 1px 5px 1px; 
+    border: 2px double rgb(0, 0, 0); 
+    display: inline-block;
+}
+.but:active {
+    color: black;
+    background: white;
+}
+
+.navlink {
+    margin: 5px;
+}
+.poiLink{
+    margin: 2px;
+}
+.page1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gainsboro;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;  
+}
+.media {
+    border: 3px solid black ;
+    border-bottom-style: none;
+}
+
+footer {
+    
+    display: grid;
+    grid-template-columns: 700px;
+    justify-content: center;
+    
+}
+.socialCon {
+    
+    display: grid;
+    width: 100%;
+    place-items: center;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    
+    
+  
+
+}
+.footNote {
+    display: grid;
+    width: 100%;
+    place-items: center;
+}
+.sContain {
+    margin: auto 0;
+}
+
+
+.imgS {
+    width: 50px;
+}
+
+
+
+
+
+@media (max-width: 566px) {
+    nav {
+      display: none;
+    }
+    
+}
+
+
+@media(max-width: 620px) {
+    .media {
+        display: none;
+    }
+  }
+
+  @media(max-width: 450px) {
+    .footNote {
+        display: none;
+    }
+  }
