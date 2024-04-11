@@ -201,7 +201,7 @@ footer {
 iframe {
     width: 400px;
     height: 500px;
-    z-index: 2;
+    z-index: 3;
 }
 
 /* All the code for the text animation- Code credit goes Elisabeth Diang from Slider Revolution, code was converted from SCSS to CSS with JSON formatter and then tweaked to fit this page  */
