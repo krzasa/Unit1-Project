@@ -1,10 +1,14 @@
+
 body {
     font-size: 16px;
     font-family: "Oswald", sans-serif;
     font-style: italic;
     color: white ;
     background-color: black;
-    height: 90%;
+    height:120%;
+    
+    
+
 }
 nav {
     display: grid;
@@ -19,12 +23,19 @@ nav {
     grid-template-areas: "logo links spacer navPOI button";
     font-size: 16px;
     
+    z-index: 5;
+
+    
+    
+    
 }
 .navLink:hover {
     border: 1px solid magenta;
+   
 }
 .poiLink:hover {
     border: 1px solid limegreen;
+    
 }
 
 .logo {
@@ -37,6 +48,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: start;
+    z-index: 3;
   }
   .spacer{
     grid-area: spacer;
@@ -50,11 +62,13 @@ nav {
     display: flex;
     flex-direction: row;
     align-content: space-between;
+    z-index: 3;
   }
   .navBut {
     align-self: center;
     grid-area: button ;
     margin-left: 5px;
+    z-index: 3;
     
   }
   .but {
@@ -71,6 +85,7 @@ nav {
 .but:active {
     color: black;
     background: white;
+    
 }
 
 .navlink {
@@ -86,12 +101,21 @@ nav {
     background-color: black;
     color: white;
 }
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
-     
     background-color: black;
+    margin-bottom: auto;
+    
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .media {
     border: 3px solid black ;
@@ -145,11 +169,39 @@ footer {
 }
 
 .headSub {
-    transform: translate(-230%, -00%) ;
+    transform: translate(-260%, 50%) ;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 1vw;
     color: #c6c6c6;
+}
+
+ .bodyBut{
+    
+        color: rgb(255, 255, 255); 
+        font-size: 20px; 
+        line-height: 20px; 
+        padding: 5px;
+        border-radius: 19px; 
+        background-image: radial-gradient(rgb(198, 198, 198) 0%, rgb(0, 0, 0) 16%, rgb(198, 198, 198) 100%);
+        box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+        border: 2px solid rgb(198, 198, 198); 
+        display: inline-block;
+        z-index: 2;
+
+        
+}
+
+.bodyBut:active {
+
+    background: #C6C6C6; 
+} 
+
+
+iframe {
+    width: 400px;
+    height: 500px;
+    z-index: 2;
 }
 
 /* All the code for the text animation- Code credit goes Elisabeth Diang from Slider Revolution, code was converted from SCSS to CSS with JSON formatter and then tweaked to fit this page  */
@@ -193,7 +245,7 @@ footer {
         transform: rotateX(0deg) skewX(0deg);
    }
 }
-@keyframes noise-1 {
+@keyframes noise-1 {  /* this is the animation keyframe for noise-1*/
     3.3333333333% {
         clip-path: inset(47px 0 3px 0);
    }
@@ -285,7 +337,7 @@ footer {
         clip-path: inset(4px 0 22px 0);
    }
 }
-@keyframes noise-2 {
+@keyframes noise-2 {  /* this is the animation keyframe for noise-2*/
     0% {
         clip-path: inset(40px 0 51px 0);
    }
@@ -380,12 +432,14 @@ footer {
         clip-path: inset(2px 0 9px 0);
    }
 }
-.scanlines {
+.scanlines {  /* this are the lines in the background*/
     overflow: hidden;
     mix-blend-mode: difference;
+    z-index: 0;
   }
-  .scanlines::before {
+   .scanlines {   /* This is the property for the site background, it's a repeating pattern for the */
     content: "";
+    z-index: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -399,7 +453,7 @@ footer {
         transform: translate(0px, 0px);
    }
     to {
-        transform: translate(0px, 2%);
+        transform: translate(0px, 1.5%);
    }
 }
 
@@ -412,13 +466,13 @@ footer {
 .subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    font-size: 0.8vw;
+    font-size: 1vw;
     color: #c6c6c6;
     /* text-transform: uppercase; */
     letter-spacing: 0.2em;
     /* text-align: center; */
     /* position: absolute; */
-    left: 17%;
+    left: 100%;
     /* animation: glitch-2 5s 5.02s infinite; */
 }
 @keyframes glitch-2 {
@@ -432,6 +486,11 @@ footer {
 
 
 /* ^^^All the code for the text animation  */
+
+
+
+
+
 @media (max-width: 566px) {
     nav {
       display: none;
