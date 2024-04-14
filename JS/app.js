@@ -1,6 +1,8 @@
 const showcase = document.querySelector(".showcase")
 const buttEle = document.querySelector(".bodyBut")
+const mode = document.querySelector(".but")
 let numPlace = 0
+let modeNum = 0
 
 
 buttEle.addEventListener("click", () =>{
@@ -24,3 +26,28 @@ window.onload = function() {  // when the page loads hide the iframe
 
     showcase.style.display = 'none';
 }
+
+mode.addEventListener("click", () => {
+    if (modeNum ==0 ) {
+        document.querySelector(".scanlines").style.background = "white"
+        document.querySelector(".navBar").style.color = "black"
+        // document.querySelector(".Logo").style.color = "black"
+        document.querySelector(".textFoot").style.color = "black"
+        document.querySelector(".logo").style.color = "black"
+        modeNum = 1
+
+        //Check in why the logo doesn't turn black
+    } else {
+        document.querySelector(".scanlines").style.background = "black"
+        document.querySelector(".navBar").style.color = "white"
+        // document.querySelector(".Logo").style.color = "black"
+        document.querySelector(".textFoot").style.color = "white"
+        document.querySelector(".logo").style.color = "white"
+        modeNum = 0
+        
+    }
+
+})
+
+// javascript:(function() {document.getElementsByTagName("html")[0].style.filter = "invert(1) hue-rotate(180deg)";Array.from(document.getElementsByTagName("img"), e => e.style.filter = "invert(1) hue-rotate(180deg)");})();
+
