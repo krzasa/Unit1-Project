@@ -38,11 +38,11 @@ mode.addEventListener("click", () => {
 
         //Check in why the logo doesn't turn black
     } else {
-        document.querySelector(".scanlines").style.background = "unset"
-        document.querySelector(".navBar").style.color = "unset"
+        document.querySelector(".scanlines").removeAttribute("style")
+        document.querySelector(".navBar").removeAttribute("style")
         // document.querySelector(".Logo").style.color = "black"
-        document.querySelector(".textFoot").style.color = "unset"
-        document.querySelector(".logo").style.color = "unset"
+        document.querySelector(".textFoot").removeAttribute("style")
+        document.querySelector(".logo").removeAttribute("style")
         modeNum = 0
         //How to remove the inline styles so you can go back to having the scanlines 
     }
