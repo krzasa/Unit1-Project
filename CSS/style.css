@@ -6,7 +6,8 @@ body {
     color: white ;
     background-color: black;
     width: auto;
-    height:120%;
+    height:100%;
+    margin: 0;
     
     
 
@@ -14,6 +15,7 @@ body {
 nav {
     display: grid;
     width: 100%;
+    height: 110%;
     align-items: center;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: auto;
@@ -23,8 +25,9 @@ nav {
     column-gap: 0px;
     grid-template-areas: "logo links spacer navPOI button";
     font-size: 16px;
+    margin: 0;
     
-    z-index: 5;
+    z-index: 3;
 
     
     
@@ -447,7 +450,7 @@ iframe {
     z-index: 0;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 130%;
     background: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 0.5%, transparent 1%);
     animation: fudge 7s ease-in-out alternate infinite;
     

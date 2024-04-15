@@ -6,7 +6,7 @@ let modeNum = 0
 
 
 buttEle.addEventListener("click", () =>{
-    // console.dir(showcase)
+    console.dir(showcase)
     showcase.style.display = 'inline';  // command to make the iframe appear
     if(numPlace === 0){  // if the number variable is 0 show the calculator and then chage the number to 1
         
@@ -30,22 +30,27 @@ window.onload = function() {  // when the page loads hide the iframe
 mode.addEventListener("click", () => {
     if (modeNum ==0 ) {
         document.querySelector(".scanlines").style.background = "white"
+        document.querySelector(".scanlines").style.webkitAnimationPlayState = "paused";
         document.querySelector(".navBar").style.color = "black"
-        // document.querySelector(".Logo").style.color = "black"
+        document.querySelector(".navBar").style.background = "white"
+        // document.querySelector(".logo").style.color = "black"
         document.querySelector(".textFoot").style.color = "black"
         document.querySelector(".logo").style.color = "black"
         modeNum = 1
 
-        //Check in why the logo doesn't turn black
+        //How to force the css to be in first keyframe to minimize blackspace 
     } else {
         document.querySelector(".scanlines").removeAttribute("style")
         document.querySelector(".navBar").removeAttribute("style")
-        // document.querySelector(".Logo").style.color = "black"
+        document.querySelector(".scanlines").style.webkitAnimationPlayState = "running";
+        // document.querySelector(".logo").style.color = "black"
         document.querySelector(".textFoot").removeAttribute("style")
         document.querySelector(".logo").removeAttribute("style")
         modeNum = 0
-        //How to remove the inline styles so you can go back to having the scanlines 
+        
     }
 
 })
+
+// javascript:(function() {document.getElementsByTagName("html")[0].style.filter = "invert(1) hue-rotate(180deg)";Array.from(document.getElementsByTagName("img"), e => e.style.filter = "invert(1) hue-rotate(180deg)");})();
 
