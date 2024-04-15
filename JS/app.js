@@ -6,7 +6,7 @@ let modeNum = 0
 
 
 buttEle.addEventListener("click", () =>{
-    console.dir(showcase)
+    // console.dir(showcase)
     showcase.style.display = 'inline';  // command to make the iframe appear
     if(numPlace === 0){  // if the number variable is 0 show the calculator and then chage the number to 1
         
@@ -48,6 +48,4 @@ mode.addEventListener("click", () => {
     }
 
 })
-
-// javascript:(function() {document.getElementsByTagName("html")[0].style.filter = "invert(1) hue-rotate(180deg)";Array.from(document.getElementsByTagName("img"), e => e.style.filter = "invert(1) hue-rotate(180deg)");})();
 

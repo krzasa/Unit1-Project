@@ -5,6 +5,7 @@ body {
     font-style: italic;
     color: white ;
     background-color: black;
+    width: auto;
     height:120%;
     
     
@@ -42,6 +43,7 @@ nav {
     
     grid-area: logo;
     width: 100px;
+    z-index: 3;
   }
   .links {
     grid-area: links;
@@ -107,7 +109,7 @@ main{
     flex-direction: column;
     align-items: center;
     background-color: black;
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
     
 }
 .content {
@@ -130,8 +132,8 @@ footer {
     position: absolute;  /*These next lines keeps the footer at the bottom */
     width: 99%;
     bottom: 0;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 5px;
+    /* margin-bottom: auto; */
     
 }
 .socialCon {
@@ -200,7 +202,8 @@ footer {
 
 iframe {
     width: 400px;
-    height: 500px;
+    height: 460px;
+    margin-bottom: auto;
     z-index: 3;
     
     
@@ -211,12 +214,12 @@ iframe {
     position: relative;
     transform: translate(-600%, 59%); /*((leftto right), (Up and down ))*/
     top: 40%;
-    left: 00%;
+    left: 150%;
 }
 .glitch, .glow {    /* this is the container */
     color: #dfbfbf;
     position: relative;
-    font-size: 2vw;
+    font-size: 3vw;
     animation: glitch 5s 5s infinite;
 }
 .glitch::before, .glow::before { /*magenta glitch effect*/ 
@@ -469,7 +472,7 @@ iframe {
 .subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
-    font-size: 1vw;
+    font-size: 1vw;  /*vw = viewport width*/
     color: #c6c6c6;
     /* text-transform: uppercase; */
     letter-spacing: 0.2em;
@@ -500,7 +503,11 @@ iframe {
     }
     
 }
-
+@media(max-width: 430px) {
+    {
+        
+    }
+  }
 
 @media(max-width: 620px) {
     .media {
