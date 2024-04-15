@@ -48,6 +48,30 @@ nav {
     width: 100px;
     z-index: 3;
   }
+  a {
+    text-decoration: none;
+
+  }
+  a:link{
+    color:white;
+  }
+  a:visited{
+    color:white;
+  }
+  a:hover{
+    color:red;
+  }
+  a:focus{
+    color:white;
+  }
+  a:active{
+    color:white;
+  }
+  
+  a:link, a:visited {
+    text-decoration: none;
+  }
+
   .links {
     grid-area: links;
     display: flex;
@@ -532,7 +556,7 @@ iframe {
   }
   .links{
     display: none;
-    width: 600px;
+    /* width: 600px; */
   }
   .navPOI{
     display: none;
@@ -547,7 +571,7 @@ iframe {
     margin-left: 8%;
   }
   .container{
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     transform: translate(-400%, 35%);
   }
   .glitch, .glow {  
