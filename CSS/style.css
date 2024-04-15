@@ -448,8 +448,6 @@ iframe {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
     background: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 0.5%, transparent 1%);
     animation: fudge 7s ease-in-out alternate infinite;
     
@@ -497,26 +495,33 @@ iframe {
 
 
 
-@media (max-width: 566px) {
-    nav {
-      display: none;
-    }
+/* @media (max-width: 566px) {
+     nav {
+       display: none; 
+    } 
     
-}
-@media(max-width: 430px) {
-    {
-        
-    }
-  }
+} */
 
-@media(max-width: 620px) {
-    .media {
+
+/* @media(max-width: 430px) {
+    .scanlines {
         display: none;
-    }
-  }
 
-  @media(max-width: 450px) {
+       
+  }
+  html {
+    margin-left: 10%;
+  }
+  
+} */
+/* @media(max-width: 620px) {
+    .media {
+         display: none; 
+    }
+  } */
+
+  /* @media(max-width: 450px) {
     .footNote {
         display: none;
     }
-  }
+  } */
