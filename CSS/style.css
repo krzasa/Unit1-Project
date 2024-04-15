@@ -46,7 +46,7 @@ nav {
     
     grid-area: logo;
     width: 100px;
-    z-index: 3;
+    z-index: 5;
     padding-left: 5px;
   }
 
@@ -535,7 +535,7 @@ iframe {
 } */
 
 
- @media(max-width: 430px) {
+ @media(max-width: 500px) {
     .scanlines {
         /* display: none; */
         width: 600px;
@@ -546,15 +546,15 @@ iframe {
     margin-left: 0%;
     
 
-    width: 500px;
+    max-width: 500px;
   }
   body {
-    width: 460px;
+    width: 420px;
     height: 60px;
     margin: 0;
   }
   nav {
-    width: 478px;
+    width: 400px;
     margin-right: 0%;
     padding-right: 10%;
     padding-left: 3%;
@@ -570,7 +570,7 @@ iframe {
     width: 100px;
   }
   footer {
-    margin-left: 10%;
+    /* margin-left: 10%; */
     /* trying to get the footer to stick to the bottom on mobile*/
     position: absolute;
     bottom: 0;

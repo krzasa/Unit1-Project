@@ -30,10 +30,11 @@ window.onload = function() {  // when the page loads hide the iframe
 mode.addEventListener("click", () => {
     if (modeNum ==0 ) {
         document.querySelector(".scanlines").style.background = "white"
+        document.querySelector(".bodyThing").style.background = "white"
         document.querySelector(".scanlines").style.webkitAnimationPlayState = "paused";
         document.querySelector(".navBar").style.color = "black"
         document.querySelector(".navBar").style.background = "white"
-        // document.querySelector(".logo").style.color = "black"
+        document.querySelector(".logo").style.color = "black"
         document.querySelector(".textFoot").style.color = "black"
         document.querySelector(".logo").style.color = "black"
         modeNum = 1
@@ -42,6 +43,7 @@ mode.addEventListener("click", () => {
     } else {
         document.querySelector(".scanlines").removeAttribute("style")
         document.querySelector(".navBar").removeAttribute("style")
+        document.querySelector(".bodyThing").removeAttribute("style")
         document.querySelector(".scanlines").style.webkitAnimationPlayState = "running";
         // document.querySelector(".logo").style.color = "black"
         document.querySelector(".textFoot").removeAttribute("style")
