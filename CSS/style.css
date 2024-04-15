@@ -47,9 +47,13 @@ nav {
     grid-area: logo;
     width: 100px;
     z-index: 3;
+    padding-left: 5px;
   }
+
+  /*Go over the link styles with Jason*/
   a {
     text-decoration: none;
+    color: white;
 
   }
   a:link{
@@ -159,7 +163,7 @@ footer {
     position: absolute;  /*These next lines keeps the footer at the bottom */
     width: 99%;
     bottom: 0;
-    margin-top: 5px;
+    margin-top: 5%;
     /* margin-bottom: auto; */
     
 }
