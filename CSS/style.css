@@ -569,7 +569,11 @@ iframe {
     width: 100px;
   }
   footer {
-    margin-left: 10%
+    margin-left: 10%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
   }
   main {
     margin-left: 8%;
