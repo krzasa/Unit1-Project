@@ -633,8 +633,8 @@ iframe {
     min-height: 3%;
   }
   #sec-two {
-    margin-bottom: auto;
-    min-height: 60vh;
+    /* margin-bottom: auto; */
+    min-height: 80vh;
   }
 
   #sec-three {
