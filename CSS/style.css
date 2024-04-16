@@ -297,7 +297,7 @@ iframe {
 /* All the code for the text animation- Code credit goes Elisabeth Diang from Slider Revolution, code was converted from SCSS to CSS with JSON formatter and then tweaked to fit this page  */
 .container {
     position: relative;
-    transform: translate(-400%, -10%); /*((leftto right), (Up and down ))  original values -600%, 59%*/
+    transform: translate(-450%, -10%); /*((leftto right), (Up and down ))  original values -600%, 59%*/
     top: 40%;
     left: 150%;
 }
@@ -612,7 +612,7 @@ iframe {
   
   .container{
     margin-bottom: 5px;
-    transform: translate(-250%, 0%);
+    transform: translate(-275%, 0%);
   }
   .glitch, .glow {  
     font-size: 20px;
