@@ -292,6 +292,7 @@ iframe {
     width: 400px;
     height: 460px;
     margin-bottom: auto;
+    
     z-index: 3;
     
     
@@ -639,6 +640,7 @@ iframe {
 
   #sec-three {
     /* margin-bottom: auto; */
+    min-height: 5%;
   }
 
   
