@@ -42,7 +42,7 @@ section {
     min-height: 12vh;
     justify-content: center;
     align-self: flex-end;
-    /* margin-top: 3vh; */
+    margin-top: 3vh;
 }
 
 
@@ -216,7 +216,7 @@ footer {
     display: grid;
     grid-template-columns: 700px;
     justify-content: center;
-    position: fixed; 
+    position: relative; 
     bottom: 60px; /*These next lines keeps the footer at the bottom */
     /* width: 99%;
     bottom: 0;
