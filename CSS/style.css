@@ -8,6 +8,9 @@ body {
     width: auto;
     height:100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
     
     
 
@@ -31,9 +34,15 @@ section {
 
 #sec-two {
     /* background-color: #a3b5d3; */
+    align-self: stretch;
     max-width: 100%;
-    min-height: 80vh;
+    min-height: 80%;
+    flex-direction: column;
     justify-content: center;
+    height: max-content;
+    flex-grow: 5;
+    flex-basis: ;
+    
 }
 
 #sec-three {
@@ -301,6 +310,7 @@ iframe {
 /* All the code for the text animation- Code credit goes Elisabeth Diang from Slider Revolution, code was converted from SCSS to CSS with JSON formatter and then tweaked to fit this page  */
 .container {
     /* position: absolute; */
+    
     /* transform: translate(-1300%, -300%); ((leftto right), (Up and down ))  original values -600%, 59% */
     /* top: 20%; */
     /* left: 150%; */
@@ -310,7 +320,7 @@ iframe {
     /* position: relative; */
     width: 0%;
     font-size: 3vw;
-    align-self: flex-start;
+    /* align-self: flex-start; */
     background-color: black;
     animation: glitch 5s 5s infinite;
 }
@@ -594,10 +604,10 @@ iframe {
     
 } */
 
-
+/* 
   @media(max-width: 430px) {
     .scanlines { 
-        /* display: none; */
+        display: none;
          width: 100%;
          height: 100%;
 
@@ -617,10 +627,10 @@ iframe {
     width: 100%;
   }
   
-  /* .container{
+  .container{
     margin-bottom: 5px;
     transform: translate(-275%, 0%);
-  } */
+  }
   .glitch, .glow {  
     font-size: 20px;
 
@@ -629,22 +639,22 @@ iframe {
     font-size: 2vw;
   }
   #sec-one {
-    /* margin-bottom: auto; */
+    margin-bottom: auto;
     width: 100%;
     min-height: 3%;
   }
   #sec-two {
-    /* margin-bottom: auto; */
+    margin-bottom: auto;
     min-height: 80vh;
   }
 
   #sec-three {
-    /* margin-bottom: auto; */
+    margin-bottom: auto;
    
   }
 
   
-}  
+}   */
 
 
 /* @media(max-width: 620px) {
