@@ -40,13 +40,23 @@ section {
     min-height: 12vh;
     justify-content: center;
     align-self: flex-end;
-    margin-top: 3vh;
+    /* margin-top: 3vh; */
 }
 
-section  {
+
+
+
+section .container {
     padding: 2em;
 }
 
+.top-container {
+    margin: auto;
+}
+
+.item-one, .item-two, .item-three {
+    padding: 1em;
+}
 
 
 
@@ -612,11 +622,13 @@ iframe {
     font-size: 2vw;
   }
   #sec-one {
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
     width: 100%;
+    min-height: 3%;
   }
   #sec-two {
     margin-bottom: auto;
+    min-height: 75vh;
   }
 
   #sec-three {

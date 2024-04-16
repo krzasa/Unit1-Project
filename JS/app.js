@@ -43,7 +43,7 @@ mode.addEventListener("click", () => {
     } else {
         document.querySelector(".scanlines").removeAttribute("style")
         document.querySelector("#sec-one").removeAttribute("style")
-        document.querySelector(".scanlines").style.webkitAnimationPlayState = "running";
+        // document.querySelector(".scanlines").style.webkitAnimationPlayState = "running";
         document.querySelector(".navBar").removeAttribute("style")
         document.querySelector(".logoLink").removeAttribute("style")
         document.querySelector(".textFoot").removeAttribute("style")
@@ -53,5 +53,4 @@ mode.addEventListener("click", () => {
 
 })
 
-// javascript:(function() {document.getElementsByTagName("html")[0].style.filter = "invert(1) hue-rotate(180deg)";Array.from(document.getElementsByTagName("img"), e => e.style.filter = "invert(1) hue-rotate(180deg)");})();
 
