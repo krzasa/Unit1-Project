@@ -32,7 +32,7 @@ section {
 #sec-two {
     /* background-color: #a3b5d3; */
     max-width: 100%;
-    min-height: 90vh;
+    min-height: 80vh;
     justify-content: center;
 }
 
@@ -41,8 +41,8 @@ section {
     max-width: 100%;
     min-height: 12vh;
     justify-content: center;
-    align-self: flex-end;
-    margin-top: 3vh;
+    align-self: stretch;
+    margin-top: 1vh;
 }
 
 
@@ -640,7 +640,7 @@ iframe {
 
   #sec-three {
     /* margin-bottom: auto; */
-    min-height: 5%;
+   
   }
 
   
