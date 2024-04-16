@@ -637,9 +637,14 @@ iframe {
     font-size: 20px;
 
   }
+  */
   .subtitle {
     font-size: 2vw;
   }
+  .headSub {
+    font-size: 1vw;
+  }
+  /*
   #sec-one {
     margin-bottom: auto;
     width: 100%;
