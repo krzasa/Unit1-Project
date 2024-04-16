@@ -12,6 +12,49 @@ body {
     
 
 }
+/*FLEXBOX PAGE LAYOUT CODE */
+
+
+section {
+    display: flex;
+}
+
+#sec-one {
+    background-color: #a3d3b0;
+    max-width: 100%;
+    min-height: 5%;
+    justify-content: center;
+
+}
+
+#sec-two {
+    background-color: #a3b5d3;
+    max-width: 100%;
+    min-height: 80vh;
+    justify-content: center;
+}
+
+#sec-three {
+    background-color: black;
+    max-width: 100%;
+    min-height: 12vh;
+    justify-content: center;
+    align-self: flex-end;
+    margin-top: 3vh;
+}
+
+section  {
+    padding: 2em;
+}
+
+
+
+
+
+
+
+
+/*END OF FLEXBOX LAYOUT CODE*/
 nav {
     display: grid;
     width: 100%;
@@ -162,9 +205,9 @@ footer {
     grid-template-columns: 700px;
     justify-content: center;
     position: fixed;  /*These next lines keeps the footer at the bottom */
-    width: 99%;
+    /* width: 99%;
     bottom: 0;
-    margin-top: 5%;
+    margin-top: 5%; */
     /* margin-bottom: auto; */
     
 }
@@ -244,7 +287,7 @@ iframe {
 /* All the code for the text animation- Code credit goes Elisabeth Diang from Slider Revolution, code was converted from SCSS to CSS with JSON formatter and then tweaked to fit this page  */
 .container {
     position: relative;
-    transform: translate(-600%, 59%); /*((leftto right), (Up and down ))*/
+    transform: translate(-400%, -10%); /*((leftto right), (Up and down ))  original values -600%, 59%*/
     top: 40%;
     left: 150%;
 }
@@ -479,7 +522,7 @@ iframe {
     z-index: 0;
     position: absolute;
     width: 100%;
-    height: 130%;
+    height: 220%;
     background: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 0.5%, transparent 1%);
     animation: fudge 7s ease-in-out alternate infinite;
     
@@ -535,54 +578,31 @@ iframe {
 } */
 
 
- @media(max-width: 500px) {
-    .scanlines {
+  @media(max-width: 430px) {
+    .scanlines { 
         /* display: none; */
-        width: 600px;
+         width: 100%;
+         height: 100%;
 
        
   } 
-  html {
-    margin-left: 0%;
-    
-
-    max-width: 500px;
-  }
-  body {
-    width: 420px;
-    height: 60px;
-    margin: 0;
-  }
   nav {
-    width: 400px;
-    margin-right: 0%;
-    padding-right: 10%;
-    padding-left: 3%;
+    justify-items: stretch;
   }
+  
   .links{
-    display: none;
-    /* width: 600px; */
-  }
+    visibility: hidden;
+   }
   .navPOI{
-    display: none;
+    visibility: hidden;
   }
   .spacer {
-    width: 100px;
-  }
-  footer {
-    /* margin-left: 10%; */
-    /* trying to get the footer to stick to the bottom on mobile*/
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    left: 0;
   }
-  main {
-    margin-left: 8%;
-  }
+  
   .container{
     margin-bottom: 5px;
-    transform: translate(-400%, 35%);
+    transform: translate(-250%, 0%);
   }
   .glitch, .glow {  
     font-size: 20px;
@@ -591,9 +611,20 @@ iframe {
   .subtitle {
     font-size: 2vw;
   }
+  #sec-one {
+    margin-bottom: auto;
+    width: 100%;
+  }
+  #sec-two {
+    margin-bottom: auto;
+  }
+
+  #sec-three {
+    margin-bottom: auto;
+  }
 
   
-} 
+}  
 
 
 /* @media(max-width: 620px) {
