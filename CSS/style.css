@@ -41,7 +41,7 @@ section {
     justify-content: center;
     height: max-content;
     flex-grow: 5;
-    flex-basis: ;
+    
     
 }
 
@@ -604,8 +604,9 @@ iframe {
     
 } */
 
-/* 
+
   @media(max-width: 430px) {
+    /* 
     .scanlines { 
         display: none;
          width: 100%;
@@ -616,7 +617,7 @@ iframe {
   nav {
     justify-items: stretch;
   }
-  
+  */
   .links{
     visibility: hidden;
    }
@@ -626,7 +627,7 @@ iframe {
   .spacer {
     width: 100%;
   }
-  
+  /*
   .container{
     margin-bottom: 5px;
     transform: translate(-275%, 0%);
@@ -653,8 +654,8 @@ iframe {
    
   }
 
-  
-}   */
+  */
+}   
 
 
 /* @media(max-width: 620px) {
