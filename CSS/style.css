@@ -22,13 +22,15 @@ section {
 #sec-one {
     background-color: #a3d3b0;
     max-width: 100%;
-    min-height: 5%;
+    /* min-height: 0%; */
     justify-content: center;
+    margin-top: 20px;
+    
 
 }
 
 #sec-two {
-    background-color: #a3b5d3;
+    /* background-color: #a3b5d3; */
     max-width: 100%;
     min-height: 80vh;
     justify-content: center;
@@ -194,7 +196,7 @@ main{
     align-items: center;
     background-color: black;
     
-    /* margin-bottom: auto; */
+    margin: 0;
     
 }
 .content {
@@ -214,7 +216,8 @@ footer {
     display: grid;
     grid-template-columns: 700px;
     justify-content: center;
-    position: fixed;  /*These next lines keeps the footer at the bottom */
+    position: fixed; 
+    bottom: 60px; /*These next lines keeps the footer at the bottom */
     /* width: 99%;
     bottom: 0;
     margin-top: 5%; */
@@ -296,15 +299,18 @@ iframe {
 
 /* All the code for the text animation- Code credit goes Elisabeth Diang from Slider Revolution, code was converted from SCSS to CSS with JSON formatter and then tweaked to fit this page  */
 .container {
-    position: relative;
-    transform: translate(-450%, -10%); /*((leftto right), (Up and down ))  original values -600%, 59%*/
-    top: 40%;
-    left: 150%;
+    /* position: absolute; */
+    /* transform: translate(-1300%, -300%); ((leftto right), (Up and down ))  original values -600%, 59% */
+    /* top: 20%; */
+    /* left: 150%; */
 }
 .glitch, .glow {    /* this is the container */
     color: #dfbfbf;
-    position: relative;
+    /* position: relative; */
+    width: 0%;
     font-size: 3vw;
+    align-self: flex-start;
+    background-color: black;
     animation: glitch 5s 5s infinite;
 }
 .glitch::before, .glow::before { /*magenta glitch effect*/ 
@@ -610,10 +616,10 @@ iframe {
     width: 100%;
   }
   
-  .container{
+  /* .container{
     margin-bottom: 5px;
     transform: translate(-275%, 0%);
-  }
+  } */
   .glitch, .glow {  
     font-size: 20px;
 
@@ -628,7 +634,7 @@ iframe {
   }
   #sec-two {
     margin-bottom: auto;
-    min-height: 75vh;
+    min-height: 60vh;
   }
 
   #sec-three {
