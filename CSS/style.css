@@ -225,7 +225,7 @@ footer {
     display: grid;
     grid-template-columns: 700px;
     justify-content: center;
-    position: fixed; 
+    position: static; 
     bottom: 0; /*These next lines keeps the footer at the bottom */
     top: 3;
     /* width: 99%;
