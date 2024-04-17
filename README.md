@@ -14,4 +14,14 @@
 # H1 How to Access the website 
 You can find the wibsite at https://krzasa.github.io/Unit1-Project/index.html
 
+# H1 File Structure 
+*index.html
+*/Css  -> style.css
+*/Js -> app.js
+*/ Resources 
+    + Social Icons 
+        *All the icon photos 
+
+    
+
 
